@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".LoginActivity">
+    <ImageView
+        android:id="@+id/logoOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo" />
+    <TextView
+        android:id="@+id/company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="DocDirectory"
+        android:layout_marginBottom="50dp"
+        android:textColor="@color/primary"
+        android:textSize="30sp" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/phoneOtp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/edittextbg"
+            android:ems="10"
+            android:paddingTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:inputType="phone"
+            android:hint="Phone Number"
+            android:paddingStart="120dp" />
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccpOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignStart="@+id/phoneOtp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:paddingTop="10dp"
+            app:ccp_showFlag="false"
+            app:ccp_showFullName="false"
+            app:ccp_showNameCode="true" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/sendOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/buttonstyle"
+        android:insetLeft="10dp"
+        android:insetRight="10dp"
+        android:text="Get OTP"
+        app:icon="@drawable/ic_baseline_arrow_forward_24"
+        app:iconGravity="textEnd" />
+</LinearLayout>

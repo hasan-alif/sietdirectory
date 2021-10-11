@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OtpActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="2.0dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:titleTextColor="@color/primary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:text="Verify OTP"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="Put the OTP number below sent to your mobile"
+        android:textColor="@color/textcolor"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/otp1"
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/edittextbg"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/otp2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:background="@drawable/edittextbg"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/otp3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:background="@drawable/edittextbg"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/otp4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:background="@drawable/edittextbg"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/otp5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:background="@drawable/edittextbg"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/otp6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:background="@drawable/edittextbg"
+            android:inputType="number"
+            android:maxLength="1" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/verifyOTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/buttonstyle"
+        android:insetLeft="10dp"
+        android:insetRight="10dp"
+        android:text="Verify"
+        app:icon="@drawable/ic_baseline_arrow_forward_24"
+        app:iconGravity="textEnd" />
+</LinearLayout>

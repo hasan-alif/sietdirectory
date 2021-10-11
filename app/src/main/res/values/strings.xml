@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">DocDirectory</string>
+    <string name="google_places_key">AIzaSyA0YZqFvzpyaT55ZZeeF1rI-t7lQ6wBsA8</string>
+    <string name="admin">+918580559020</string>
+    <string-array name="department">
+        <item>Cardiologist</item>
+        <item>Audiologist</item>
+        <item>Dentist</item>
+        <item>Surgeon</item>
+        <item>ENT specialist</item>
+        <item>Gynaecologist</item>
+        <item>Orthopaedic</item>
+        <item>Paediatrician</item>
+        <item>Psychiatrists</item>
+        <item>Veterinarian</item>
+        <item>Radiologist</item>
+        <item>Pulmonologist</item>
+        <item>Endocrinologist</item>
+        <item>Oncologist</item>
+        <item>Neurologist</item>
+        <item>Rheumatologist</item>
+        <item>Allergist</item>
+    </string-array>
+</resources>

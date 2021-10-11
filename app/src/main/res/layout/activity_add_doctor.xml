@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddDoctorActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarAddDoctor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="2.0dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:titleTextColor="@color/textcolor">
+        <LinearLayout
+            android:gravity="center|center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/logoOtp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/logo" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:text="@string/app_name"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/primary"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/uploadDoctorProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:visibility="visible"
+                app:srcCompat="@drawable/addprofile" />
+
+            <ImageView
+                android:id="@+id/doctorProfilePic"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="40dp"
+                android:background="@color/white"
+                android:visibility="gone"
+                app:srcCompat="@android:drawable/sym_def_app_icon" />
+            <ProgressBar
+                android:id="@+id/doctorAddProgressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                />
+            <EditText
+                android:id="@+id/doctorName"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/edittextbg"
+                android:ems="10"
+                android:hint="Doctor Name"
+                android:inputType="text"
+                android:paddingStart="20dp" />
+
+            <Spinner
+                android:id="@+id/doctorDepartment"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/edittextbg"
+                android:dropDownWidth="match_parent" />
+
+            <EditText
+                android:id="@+id/doctorHospital"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/edittextbg"
+                android:ems="10"
+                android:hint="Hospital Name"
+                android:inputType="text"
+                android:paddingStart="20dp" />
+            <EditText
+                android:id="@+id/doctorPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/edittextbg"
+                android:ems="10"
+                android:hint="Mobile Number For Appointment"
+                android:inputType="phone"
+                android:paddingStart="20dp" />
+
+            <EditText
+                android:id="@+id/doctorDegrees"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/edittextbg"
+                android:ems="10"
+                android:hint="Degrees"
+                android:inputType="text"
+                android:paddingStart="20dp" />
+            <EditText
+                android:id="@+id/doctorExperience"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/edittextbg"
+                android:ems="10"
+                android:hint="Years Of Experience"
+                android:inputType="phone"
+                android:paddingStart="20dp" />
+
+            <Button
+                android:id="@+id/saveDoctorInformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/buttonstyle"
+                android:insetLeft="10dp"
+                android:insetRight="10dp"
+                android:text="Add Doctor" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
